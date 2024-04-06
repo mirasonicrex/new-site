@@ -25,8 +25,10 @@ const Dashboard: React.FC = () => {
 
   return (
     <div>
-    <h1>Older Git Hub Projects</h1>
+    <h1 style={{paddingTop: '60px'}}>Older Git Hub Projects</h1>
+
       <div className={styles.controls}>
+      <label htmlFor="techSelect" className={styles.label}>Filter by Technology:</label>
         <select
           value={selectedTech}
           onChange={(e) => setSelectedTech(e.target.value)}
@@ -38,7 +40,7 @@ const Dashboard: React.FC = () => {
             </option>
           ))}
         </select>
-
+        <label htmlFor="sortSelect" className={styles.label}>Sort Order:</label>
         <select
           value={sortOrder}
           onChange={(e) => setSortOrder(e.target.value)}

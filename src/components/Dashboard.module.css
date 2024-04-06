@@ -4,6 +4,32 @@
     gap: 20px;
     justify-content: space-evenly;
     padding: 20px;
-
     font-family: Arial, sans-serif;
   }
+
+
+  .dropdown {
+    color: #333333; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    background-color: #ffffff;
+    border: 1px solid #cfcdcd;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .dropdown:hover,
+.dropdown:focus {
+  outline: none;
+  box-shadow:  0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.label {
+  margin-bottom: 5px; 
+  color: #333333; 
+  font-size: 1rem; 
+  font-family: Arial, sans-serif; 
+}

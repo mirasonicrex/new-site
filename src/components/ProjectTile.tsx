@@ -32,13 +32,15 @@ export const ProjectTile: React.FC<ProjectTileProps> = ({
         </div>
         <div className={styles.projectTileBack}>
           <h2>{title}</h2>
+          <div>{date}</div>
           <p>{description}</p>
-          <ul className={styles.technologies}>
+          <div className={styles.technologies}>
             {technologies.map((tech, index) => (
-              <li key={index}>{tech}</li>
+              <div key={index}>{tech}</div>
             ))}
-          </ul>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer"  className={styles.link}>View on GitHub</a>
         </div>
       </div>
     </div>

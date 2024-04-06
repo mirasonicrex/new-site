@@ -30,9 +30,10 @@
   }
 
   button {
-    background-color: #a3a3a3;
-    border: 5px solid #cfcdcd;
-    border-radius: 20px;
+    background-color: #ebe9eb;
+    border: 2px solid #dfdddf;
+    color: rgb(59, 59, 59);
+    border-radius: 10px;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
