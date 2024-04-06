@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.floatingSprite {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px; /* Adjust the width as needed */
+  z-index: 1000;
+  /* Allows for scrolling if the content overflows */
+}
+
+.mainContent {
+  margin-left: 300px; /* This should match the width of the floatingSprite */
+  flex-grow: 1;
+
+  height: 100vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
