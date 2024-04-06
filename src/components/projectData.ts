@@ -4,7 +4,7 @@ export const projectsData = [
       title: "Project One",
       description: "This is a brief description of Project One.",
       technologies: ["React", "CSS", "TypeScript"],
-      imageUrl: "path/to/image1.jpg",
+      imageUrl: "imgs/territories.png",
       githubUrl: "https://github.com/username/project-one",
       date: "2023-01-15",
     },
@@ -13,7 +13,7 @@ export const projectsData = [
       title: "Project Two",
       description: "This is a brief description of Project Two.",
       technologies: ["Node.js", "Express", "MongoDB"],
-      imageUrl: "path/to/image2.jpg",
+      imageUrl: "imgs/pokemon.png",
       githubUrl: "https://github.com/username/project-two",
       date: "2023-01-17",
     },
@@ -22,9 +22,9 @@ export const projectsData = [
         title: "Project Threeo",
         description: "This is a brief description of Project Two.",
         technologies: ["Node.js", "Express", "MongoDB"],
-        imageUrl: "path/to/image2.jpg",
+        imageUrl: "imgs/blog.png",
         githubUrl: "https://github.com/username/project-two",
         date: "2023-01-17",
       },
-    // Add more projects as needed
+ 
   ];

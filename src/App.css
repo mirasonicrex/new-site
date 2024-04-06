@@ -15,8 +15,8 @@
 .mainContent {
   margin-left: 300px; /* This should match the width of the floatingSprite */
   flex-grow: 1;
-
   height: 100vh;
+
 }
 
 .App-logo {
@@ -41,9 +41,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
