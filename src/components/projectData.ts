@@ -1,7 +1,7 @@
 export const projectsData = [
     {
       id: 1,
-      title: "Project One",
+      title: "Territories",
       description: "This is a brief description of Project One.",
       technologies: ["React", "CSS", "TypeScript"],
       imageUrl: "imgs/territories.png",
@@ -25,6 +25,31 @@ export const projectsData = [
         imageUrl: "imgs/blog.png",
         githubUrl: "https://github.com/username/project-two",
         date: "2023-01-17",
+      },{
+      id: 4,
+      title: "Project One",
+      description: "This is a brief description of Project One.",
+      technologies: ["React", "CSS", "TypeScript"],
+      imageUrl: "imgs/UnityGame.png",
+      githubUrl: "https://github.com/username/project-one",
+      date: "2023-01-15",
+    },
+    {
+      id: 5,
+      title: "Project Two",
+      description: "This is a brief description of Project Two.",
+      technologies: ["Node.js", "Express", "MongoDB"],
+      imageUrl: "imgs/SupplyChain.png",
+      githubUrl: "https://github.com/username/project-two",
+      date: "2023-01-17",
+    },
+    {
+        id: 6,
+        title: "Project Threeo",
+        description: "This is a brief description of Project Two.",
+        technologies: ["Node.js", "Express", "MongoDB"],
+        imageUrl: "imgs/marsrealty.png",
+        githubUrl: "https://github.com/username/project-two",
+        date: "2023-01-17",
       },
- 
   ];

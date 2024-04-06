@@ -4,6 +4,7 @@ import './App.css';
 import Dashboard from './components/Dashboard';
 import SpecialProjectHighlight from './components/SpecialProjectHighlight';
 import FloatingSprite from './components/FloatingSprite';
+import Slideshow from './components/SlideShow';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="mainContent">
         <SpecialProjectHighlight />
         <Dashboard />
+        <Slideshow />
       </div>
     
     </div>
