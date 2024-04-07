@@ -56,7 +56,7 @@ const Slideshow: React.FC = () => {
     return (
       <div className={styles.container}>
         <h1>3D Modeling & VFX Projects</h1>
-              <div className={styles.buttonContainer}>
+         <div className={styles.buttonContainer}>
         <button onClick={prevSet}>Prev</button>
         <button onClick={nextSet}>Next</button>
         </div>

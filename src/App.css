@@ -7,14 +7,16 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 200px; 
-  z-index: 1000;
+
+  z-index:-1;
 }
 
 .mainContent {
-  margin-left: 300px; 
+  margin:  0 300px; 
   flex-grow: 1;
   height: 100vh;
+  position: absolute;
+  z-index: 10;
 
 }
 

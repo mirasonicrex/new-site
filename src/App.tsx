@@ -5,10 +5,13 @@ import Dashboard from './components/Dashboard';
 import SpecialProjectHighlight from './components/SpecialProjectHighlight';
 import FloatingSprite from './components/FloatingSprite';
 import Slideshow from './components/SlideShow';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+      <Header/>
     <div className="floatingSprite">
         <FloatingSprite />
       </div>
@@ -17,8 +20,9 @@ function App() {
         <Dashboard />
         <Slideshow />
       </div>
-    
+    <Footer  />
     </div>
+
   );
 }
 
