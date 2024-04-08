@@ -63,14 +63,14 @@ const FloatingSprites: React.FC = () => {
         const threshold = 1.5; // Threshold for magnetization
         if (dist < threshold) {
       
-          mesh.position.x += (mousePosition.current.x - mesh.position.x) * 0.05; 
-          mesh.position.y += (mousePosition.current.y - mesh.position.y) * 0.05;
+          mesh.position.x += (mousePosition.current.x - mesh.position.x) * 0.005; 
+          mesh.position.y += (mousePosition.current.y - mesh.position.y) * 0.005;
         }
 
         // Reset position if it falls below the view
         if (mesh.position.y < -5) {
           mesh.position.y = 5;
-          mesh.position.x = (Math.random() - 0.5) * 10;
+          mesh.position.x = (Math.random() - 0.5) * 20;
         }
       });
       renderer.render(scene, camera);

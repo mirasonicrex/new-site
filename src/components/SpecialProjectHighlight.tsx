@@ -2,46 +2,38 @@ import styles from "./SpecialProjectHighlight.module.css";
 const SpecialProjectHighlight: React.FC = () => {
   return (
     <div className={styles.specialProjectContainer}>
-      <section className={styles.projectSection}>
-        <h2>Indie Game</h2>
+      <section className={`${styles.projectSection} ${styles.alignLeft}`}>
+        <h2 style={{ alignSelf: "center" }}>Indie Game</h2>
         <p>
-          <a
-            href="https://thatisthegame.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ./ThisIsTheGame
-          </a>{" "}
+          <b>
+            <a
+              href="https://thatisthegame.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ./ThisIsTheGame
+            </a>
+          </b>{" "}
           is an indie game that I have been developing solo since October 2022.
-          You play from the perspective of a game developer returning to an old
-          project that you abandoned, only to find that the game has not stopped
-          evolving since you left it. The game is coded in C# using Unity.
+          You return to an old
+          project that you've abandoned, only to find that the game has not stopped
+          evolving since you left it. <div className={styles.technologies}>C#</div> <div className={styles.technologies}>Unity</div>
         </p>
-        <li>
-          <a
-            href="https://thatisthegame.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Project Website
-          </a>
-        </li>
-        <a   href="https://thatisthegame.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-        <img
-            style={{
-              alignSelf: "flex-end",
-              maxWidth: "100%",
-              height: "auto",
-              marginRight: "2em",
-            }}
-            src="portfolio/pathfinding.gif"
-            alt="Pathfinding Algorithm"
+        <a
+          style={{
+            alignSelf: "center",
+          }}
+          href="https://store.steampowered.com/app/2619170/ThisIsTheGame/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="imgs/SteamCoverWishlist.png"
+            alt="Steam Page"
             width="450"
-            height="300"
+            height="100%"
           />
-          </a>
+        </a>
       </section>
 
       <section className={`${styles.projectSection} ${styles.alignLeft}`}>
@@ -81,7 +73,7 @@ const SpecialProjectHighlight: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Making NPCs Come Alive, Adding GOAP To My Game
+                  Making NPCs Come Alive, Adding GOAP To My Game <div className={styles.technologies}>Blog Post</div>
                 </a>
               </li>
               <li style={{ margin: "1em" }}>
@@ -90,7 +82,7 @@ const SpecialProjectHighlight: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GOAP Sample Repo
+                  GOAP Sample Repo <div className={styles.technologies}>C#</div>
                 </a>
               </li>
             </ul>
@@ -121,7 +113,7 @@ const SpecialProjectHighlight: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Pathfinding Lessons learned
+                Pathfinding Lessons learned <div className={styles.technologies}>Blog Post</div>
               </a>
             </li>
             <li style={{ margin: "1em" }}>
@@ -130,7 +122,7 @@ const SpecialProjectHighlight: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub Repo
+                A* Pathfinding Repo <div className={styles.technologies}>C#</div>
               </a>
             </li>
           </ul>
