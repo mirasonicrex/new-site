@@ -83,7 +83,7 @@ const FloatingSprites: React.FC = () => {
       window.removeEventListener("mousemove", onMouseMove);
       current?.removeChild(renderer.domElement);
     };
-  }, []);
+  }, [current]);
 
   return <div ref={mountRef} style={{ height: "100vh", width: "100%", position: 'fixed', top: 0, left: 0 }} />;
 };
