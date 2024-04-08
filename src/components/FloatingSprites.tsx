@@ -2,7 +2,9 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 const FloatingSprites: React.FC = () => {
+
   const mountRef = useRef<HTMLDivElement>(null);
+  const current = mountRef.current;
   const mousePosition = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -79,7 +81,7 @@ const FloatingSprites: React.FC = () => {
 
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
-      mountRef.current?.removeChild(renderer.domElement);
+      current?.removeChild(renderer.domElement);
     };
   }, []);
 

@@ -4,7 +4,7 @@ return (
     <div className={styles.container}>
         <h2>Recent Projects</h2>
         <h3>Three.js Website - April 2024</h3>
-         <img width="650" height="auto" src="imgs/aprilScreenshot.png"></img>
+         <img       alt="three.js Website" width="650" height="auto" src="imgs/aprilScreenshot.png"></img>
          <div>
          <div className={styles.technologies}>Three.js</div>
         <div className={styles.technologies}>React</div>
@@ -18,6 +18,7 @@ return (
               href="https://github.com/mirasonicrex/three-js-website"
               target="_blank"
               rel="noopener noreferrer"
+        
             >
               GitHub Repo
             </a>
