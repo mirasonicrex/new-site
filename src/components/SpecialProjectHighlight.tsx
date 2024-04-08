@@ -26,6 +26,22 @@ const SpecialProjectHighlight: React.FC = () => {
             Project Website
           </a>
         </li>
+        <a   href="https://thatisthegame.com/"
+            target="_blank"
+            rel="noopener noreferrer">
+        <img
+            style={{
+              alignSelf: "flex-end",
+              maxWidth: "100%",
+              height: "auto",
+              marginRight: "2em",
+            }}
+            src="portfolio/pathfinding.gif"
+            alt="Pathfinding Algorithm"
+            width="450"
+            height="300"
+          />
+          </a>
       </section>
 
       <section className={`${styles.projectSection} ${styles.alignLeft}`}>

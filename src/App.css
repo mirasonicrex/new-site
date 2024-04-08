@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: '100vh';
+  position: absolute;
 }
 
 .floatingSprite {
@@ -7,15 +11,13 @@
   left: 0;
   top: 0;
   bottom: 0;
-
   z-index:-1;
+  
 }
 
 .mainContent {
   margin:  0 300px; 
   flex-grow: 1;
-  height: 100vh;
-  position: absolute;
   z-index: 10;
 
 }
@@ -32,7 +34,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1d1f24;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

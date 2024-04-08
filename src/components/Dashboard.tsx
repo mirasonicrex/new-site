@@ -24,8 +24,8 @@ const Dashboard: React.FC = () => {
   });
 
   return (
-    <div>
-    <h1 style={{paddingTop: '60px'}}>Older Git Hub Projects</h1>
+    <div className={styles.container}>
+    <h1>Older Git Hub Projects</h1>
 
       <div className={styles.controls}>
       <label htmlFor="techSelect" className={styles.label}>Filter by Technology:</label>
@@ -49,8 +49,8 @@ const Dashboard: React.FC = () => {
           <option value="Newest">Newest First</option>
           <option value="Oldest">Oldest First</option>
         </select>
+   
       </div>
-
       <div className={styles.dashboard}>
         {filteredProjects.map(project => (
           <ProjectTile

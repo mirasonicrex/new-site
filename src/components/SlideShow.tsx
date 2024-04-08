@@ -56,10 +56,7 @@ const Slideshow: React.FC = () => {
     return (
       <div className={styles.container}>
         <h1>3D Modeling & VFX Projects</h1>
-         <div className={styles.buttonContainer}>
-        <button onClick={prevSet}>Prev</button>
-        <button onClick={nextSet}>Next</button>
-        </div>
+     
         <div className={styles.slideshowContainer}>
           {currentPosts.map((post) => (
             <div key={post.id} className={styles.post}>
@@ -68,7 +65,10 @@ const Slideshow: React.FC = () => {
           ))}
         </div>
   
-  
+        <div className={styles.buttonContainer}>
+        <button onClick={prevSet}>Prev</button>
+        <button onClick={nextSet}>Next</button>
+        </div>
       </div>
     );
   };

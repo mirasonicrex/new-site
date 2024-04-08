@@ -5,20 +5,29 @@
     justify-content: space-evenly;
     padding: 20px;
     font-family: Arial, sans-serif;
+    
   }
 
+  .container { 
+    padding: 20px;
+    margin: 100px 20px;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  
+  }
 
   .dropdown {
     color: #333333; 
     font-size: 1rem; 
     cursor: pointer; 
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     border: 1px solid #cfcdcd;
     border-radius: 10px;
     padding: 5px 20px;
     margin: 10px;
     cursor: pointer;
-    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow:  0 2px 2px rgba(0, 0, 0, 0.5);
   }
 
   .dropdown:hover,
@@ -29,7 +38,7 @@
 
 .label {
   margin-bottom: 5px; 
-  color: #333333; 
+  color: #717171; 
   font-size: 1rem; 
   font-family: Arial, sans-serif; 
 }
