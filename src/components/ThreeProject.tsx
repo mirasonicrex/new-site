@@ -1,6 +1,7 @@
+import styles from './three.module.css'
 const ThreeProject: React.FC = () => {
 return (
-    <div></div>
+    <div className={styles.container}>A Porject with  three.js and react</div>
 )
 }
 

@@ -32,6 +32,32 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@media (max-width: 768px) {
+  .mainContent {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+
+  .floatingSprite {
+    display: none; 
+  }
+
+
+  .App-header {
+    min-height: 60vh;
+    font-size: calc(8px + 2vmin);
+  }
+
+  h1, h2, h3 {
+    font-size: 4vw; 
+  }
+
+
+  img, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 .App-header {
   background-color: #1d1f24;

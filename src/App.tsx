@@ -7,6 +7,8 @@ import Slideshow from './components/SlideShow';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import DropdownMenu from './components/DropdownMenu';
+import ThreeProject from './components/ThreeProject';
+import About from './components/About';
 
 function App() {
   return (
@@ -15,15 +17,29 @@ function App() {
     <div className="floatingSprite">
         <FloatingSprites />
       </div>
+      <div style={{marginTop: '60px'}} id="about">
+        <About  />
+      </div>
+      <div id="recentProjects">
+        <ThreeProject /> 
+      </div>
       <div className="mainContent">
+        <div >
         <SpecialProjectHighlight />
-        <div style={{display:'flex', flexDirection: 'column', justifyContent:  'space-evenly'}}>
-        <DropdownMenu portfolioLink={"https://miraheckmann.netlify.app/"} year={"2020"}/>
-        <DropdownMenu portfolioLink={"https://miraheckmann.netlify.app/"} year={"2023"}/>
         </div>
-  
+        <div id="pastPortfolios"  style={{marginTop: '100px'}}></div>
+        <div  style={{display:'flex', flexDirection: 'column', justifyContent:  'space-evenly'}}>
+        <DropdownMenu portfolioLink={"https://miraheckmann.netlify.app/"} year={"2020"}/>
+      
+        <DropdownMenu portfolioLink={"https://miraheckmann.netlify.app/"} year={"2023"}/>
+       
+        </div>
+        <div id="dashboard" className="section">
         <Dashboard />
+      </div>
+      <div id="slideshow" className="section">
         <Slideshow />
+      </div>
       </div>
     <Footer  />
     </div>
