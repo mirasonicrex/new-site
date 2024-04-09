@@ -56,14 +56,15 @@
 .label {
   display: flex;
   justify-content: flex-start;
+  padding: 4px 6px;
 }
   .container { 
-    padding: 20px;
-    margin: 0 auto; /* Center align the container */
+    padding: 10px 0;
+    margin: 0 auto; 
     border-radius: 8px;
     background-color: #ffffff; 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
-    width: 100%; /* Make the container full width */
+    width: 100%; 
     box-sizing: border-box;
   }
 
@@ -73,8 +74,9 @@
     border-radius: 10px;
     padding: 5px 10px;
     margin: 10px;
-    width: 50%;
+    width: 30%;
 
   }
+  
 
 }

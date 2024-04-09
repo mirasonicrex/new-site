@@ -40,14 +40,6 @@
 
 }
 
-iframe {
-  margin-top: 10px;
-  border-radius: 8px; 
-  width: 100%; 
-  max-width: 560px; 
-  height: 315px; 
-}
-
 img {
   border-radius: 8px; 
 }
@@ -98,8 +90,6 @@ ul, ol {
     font-size: 1.5em;
   }
 
-
-
   .technologies {
     padding: 2px 8px; 
     font-size: 0.8em;
@@ -112,5 +102,9 @@ ul, ol {
     justify-content: space-between;
     width: 100%;
   
+  }
+
+  .iframe {
+    height: 100%;
   }
 }

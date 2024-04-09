@@ -52,8 +52,8 @@ const SpecialProjectHighlight: React.FC = () => {
         </p>
         <div className={styles.content}>
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="100%"
             src="https://www.youtube.com/embed/fQb0Iaj50bU"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
