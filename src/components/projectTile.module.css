@@ -94,3 +94,33 @@
     background-color: #4b454e; 
     color: #ffffff; 
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    gap: 15px;
+    max-width: 90%; /* Adjust the width to be more suitable for smaller screens */
+  }
+
+  img {
+    width: 50%; /* Make the image fully responsive by allowing it to scale with the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 650px; /* Optional: Ensure it doesn't scale beyond its original size */
+  }
+
+  h2, h3 {
+    text-align: center; /* Center-align headings for a better mobile layout */
+    font-size: 1.5em; /* Adjust headings size to fit smaller screens better */
+  }
+
+  .link {
+    padding: 8px 10px; /* Adjust padding for a smaller footprint */
+    font-size: 0.8em; /* Reduce font size to fit better */
+  }
+
+  .technologies {
+    padding: 2px 8px; /* Reduce padding for technology tags */
+    font-size: 0.8em; /* Slightly reduce font size for a compact look */
+    margin: 0 4px 4px 0; /* Adjust margins for closer, more compact spacing */
+  }
+}

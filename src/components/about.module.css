@@ -15,7 +15,7 @@
     border-radius: 10px;
     margin-right: 20px;
     transition: transform 0.3s ease-in-out;
-    width: 100%; /* Adjusting width to be responsive within the grid */
+    width: 100%;
     height: auto;
   }
   
@@ -77,9 +77,9 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
   }
   .skills {
-    grid-area: skills; /* Assigning to grid area */
+    grid-area: skills; 
     display: flex;
-    justify-content: flex-end; /* This will distribute space around each technology */
+    justify-content: flex-end; 
     gap: 20px;
     width: 100%;
  
@@ -92,4 +92,43 @@
     border-radius: 5px;
     font-size: 0.85em;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "photo"
+        "about"
+        "links"
+        "skills";
+      margin: 20px; /* Keep the reduced margin for better edge spacing */
+      max-width: 95%; /* Limit the maximum width to ensure it doesn't stretch too far on small devices */
+      gap: 10px; /* Adjust the gap for tighter spacing */
+    }
+  
+    .profileImage {
+      width: 40%;
+      margin: 10px auto;
+    }
+  
+    .about, .links, .skills {
+      padding: 5px; 
+    }
+  
+    .aboutText {
+      font-size: 18px; 
+    }
+  
+    .links a, .technologies {
+      padding: 8px 12px; 
+      font-size: 14px; 
+      margin: 5px 5px 5px 0;
+    }
+  
+    .skills {
+      justify-content: space-around; 
+      flex-wrap: wrap; 
+      gap: 10px; 
+    }
   }

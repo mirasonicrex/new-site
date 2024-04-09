@@ -15,9 +15,10 @@ const SpecialProjectHighlight: React.FC = () => {
             </a>
           </b>{" "}
           is an indie game that I have been developing solo since October 2022.
-          You return to an old
-          project that you've abandoned, only to find that the game has not stopped
-          evolving since you left it. <div className={styles.technologies}>C#</div> <div className={styles.technologies}>Unity</div>
+          You return to an old project that you've abandoned, only to find that
+          the game has not stopped evolving since you left it.{" "}
+          <div className={styles.technologies}>C#</div>{" "}
+          <div className={styles.technologies}>Unity</div>
         </p>
         <a
           style={{
@@ -49,7 +50,7 @@ const SpecialProjectHighlight: React.FC = () => {
           most cost-effective plan, meaning the plan that achieves the goal with
           the least amount of steps or resources.
         </p>
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div className={styles.content}>
           <iframe
             width="560"
             height="315"
@@ -58,14 +59,7 @@ const SpecialProjectHighlight: React.FC = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              width: "100%",
-            }}
-          >
+          <div>
             <ul>
               <li style={{ margin: "1em", paddingTop: "30px" }}>
                 <a
@@ -73,7 +67,8 @@ const SpecialProjectHighlight: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Making NPCs Come Alive, Adding GOAP To My Game <div className={styles.technologies}>Blog Post</div>
+                  Making NPCs Come Alive, Adding GOAP To My Game{" "}
+                  <div className={styles.technologies}>Blog Post</div>
                 </a>
               </li>
               <li style={{ margin: "1em" }}>
@@ -98,14 +93,7 @@ const SpecialProjectHighlight: React.FC = () => {
           system to move NPCs from one place to another while avoiding
           obstacles.
         </p>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
+        <div className={styles.content}>
           <ul>
             <li style={{ margin: "1em", paddingTop: "30px" }}>
               <a
@@ -113,7 +101,8 @@ const SpecialProjectHighlight: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Pathfinding Lessons learned <div className={styles.technologies}>Blog Post</div>
+                Pathfinding Lessons learned{" "}
+                <div className={styles.technologies}>Blog Post</div>
               </a>
             </li>
             <li style={{ margin: "1em" }}>
@@ -122,21 +111,22 @@ const SpecialProjectHighlight: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                A* Pathfinding Repo <div className={styles.technologies}>C#</div>
+                A* Pathfinding Repo{" "}
+                <div className={styles.technologies}>C#</div>
               </a>
             </li>
           </ul>
           <img
             style={{
               alignSelf: "flex-end",
-              maxWidth: "100%",
+              maxWidth: "90%",
               height: "auto",
               marginRight: "2em",
             }}
             src="portfolio/pathfinding.gif"
             alt="Pathfinding Algorithm"
-            width="450"
-            height="300"
+            width="100%"
+            height="100%"
           />
         </div>
       </section>

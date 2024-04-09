@@ -27,6 +27,7 @@ const Dashboard: React.FC = () => {
     <div className={styles.container}>
     <h1>Older Git Hub Projects</h1>
 
+    <div>
       <div className={styles.controls}>
       <label htmlFor="techSelect" className={styles.label}>Filter by Technology:</label>
         <select
@@ -49,7 +50,7 @@ const Dashboard: React.FC = () => {
           <option value="Newest">Newest First</option>
           <option value="Oldest">Oldest First</option>
         </select>
-   
+      </div>
       </div>
       <div className={styles.dashboard}>
         {filteredProjects.map(project => (

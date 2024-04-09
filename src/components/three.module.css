@@ -49,3 +49,33 @@ h3 {
   border-radius: 5px; 
   font-size: 0.85em; 
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    gap: 15px;
+    max-width: 80%; 
+  }
+
+  img {
+    width: 100%; 
+    height: auto; 
+    max-width: 650px;
+  }
+
+  h2, h3 {
+    text-align: center; 
+    font-size: 1.5em; 
+  }
+
+  .link {
+    padding: 8px 10px; 
+    font-size: 0.8em;
+  }
+
+  .technologies {
+    padding: 2px 8px; 
+    font-size: 0.8em; 
+    margin: 0 4px 4px 0; 
+  }
+}

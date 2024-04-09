@@ -36,6 +36,8 @@
   .mainContent {
     margin: 0 20px;
     flex-direction: column;
+    margin: 0 10px; 
+    width: auto;
   }
 
   .floatingSprite {

@@ -31,7 +31,7 @@ function App() {
         <div  style={{display:'flex', flexDirection: 'column', justifyContent:  'space-evenly'}}>
         <DropdownMenu portfolioLink={"https://miraheckmann.netlify.app/"} year={"2020"}/>
       
-        <DropdownMenu portfolioLink={"https://miraportfolio-v2.netlify.app/"} year={"2023"}/>
+        <DropdownMenu portfolioLink={"https://mira-portfolio-v2.netlify.app/"} year={"2023"}/>
        
         </div>
         <div id="dashboard" className="section">
