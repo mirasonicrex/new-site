@@ -53,7 +53,7 @@ const SpecialProjectHighlight: React.FC = () => {
         <div className={styles.content}>
           <iframe
             width="100%"
-            height="100%"
+            height="450px"
             src="https://www.youtube.com/embed/fQb0Iaj50bU"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -116,18 +116,16 @@ const SpecialProjectHighlight: React.FC = () => {
               </a>
             </li>
           </ul>
+          <div className={styles.imgGif}>
           <img
-            style={{
-              alignSelf: "flex-end",
-              maxWidth: "90%",
-              height: "auto",
-              marginRight: "2em",
-            }}
+            
             src="portfolio/pathfinding.gif"
             alt="Pathfinding Algorithm"
             width="100%"
             height="100%"
           />
+          </div>
+     
         </div>
       </section>
     </div>
