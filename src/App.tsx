@@ -17,13 +17,14 @@ function App() {
     <div className="floatingSprite">
         <FloatingSprites />
       </div>
+
+      <div className="mainContent">
       <div style={{marginTop: '60px'}} id="about">
         <About  />
       </div>
       <div id="recentProjects">
         <ThreeProject /> 
       </div>
-      <div className="mainContent">
         <div >
         <SpecialProjectHighlight />
         </div>

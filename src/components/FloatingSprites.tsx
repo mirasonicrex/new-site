@@ -1,11 +1,18 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+import styles from './floatingSprites.module.css';
 
 const FloatingSprites: React.FC = () => {
 
   const mountRef = useRef<HTMLDivElement>(null);
   const current = mountRef.current;
   const mousePosition = useRef({ x: 0, y: 0 });
+  const baseSpeedRef = useRef(1); 
+  const [baseSpeed, setBaseSpeed] = useState(1);
+
+  useEffect(() => {
+    baseSpeedRef.current = baseSpeed; //  updating the ref
+  }, [baseSpeed]);
 
   useEffect(() => {
     const convertTo3DSpace = (mouseX: number, mouseY: number) => {
@@ -57,8 +64,7 @@ const FloatingSprites: React.FC = () => {
     const animate = () => {
       requestAnimationFrame(animate);
       spheres.forEach(({ mesh, speed }) => {
-    
-        mesh.position.y -= speed;
+        mesh.position.y -= speed * baseSpeedRef.current;
 
         // Check distance from the mouse
         const dist = mesh.position.distanceTo(new THREE.Vector3(mousePosition.current.x, mousePosition.current.y, mesh.position.z));
@@ -85,7 +91,24 @@ const FloatingSprites: React.FC = () => {
     };
   }, [current]);
 
-  return <div ref={mountRef} style={{ height: "100vh", width: "100%", position: 'fixed', top: 0, left: 0 }} />;
+  return (
+    <>
+ <div ref={mountRef} style={{ height: "100vh", width: "100%", position: 'fixed', top: 0, left: 0, zIndex: -1  }} />
+      <div style={{ position: "absolute", top: 80, left: 20, zIndex: 1000 }}>
+      <label htmlFor="speedControl" className={styles.label}>Adjust Falling Speed:</label>
+        <input
+          id="speedControl"
+          type="range"
+          min="1"
+          max="10"
+          step="1"
+          value={baseSpeed}
+          onChange={(e) => setBaseSpeed(parseFloat(e.target.value))}
+          className={styles.input}
+        />
+      </div>
+    </>
+  );
 };
 
 export default FloatingSprites;
