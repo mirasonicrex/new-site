@@ -117,15 +117,13 @@ const SpecialProjectHighlight: React.FC = () => {
             </li>
           </ul>
           <div className={styles.imgGif}>
-          <img
-            
-            src="portfolio/pathfinding.gif"
-            alt="Pathfinding Algorithm"
-            width="100%"
-            height="100%"
-          />
+            <img
+              src="portfolio/pathfinding.gif"
+              alt="Pathfinding Algorithm"
+              width="100%"
+              height="100%"
+            />
           </div>
-     
         </div>
       </section>
     </div>
