@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProjectTile from './ProjectTile';
-import { projectsData } from './projectData';
+import { projectsData } from '../data/projectData';
 import styles from './Dashboard.module.css';
 
 const Dashboard: React.FC = () => {
