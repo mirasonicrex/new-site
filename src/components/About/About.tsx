@@ -1,3 +1,4 @@
+import TechTags from "../Projects/TechTags";
 import styles from "./about.module.css";
 
 const About = () => {
@@ -32,15 +33,9 @@ const About = () => {
           GitHub
         </a>
       </div>
+
       <div className={styles.skills}>
-        <div className={styles.technologies}>React.js</div>
-        <div className={styles.technologies}>Three.js</div>
-        <div className={styles.technologies}>Python</div>
-        <div className={styles.technologies}>CSS</div>
-        <div className={styles.technologies}>TypeScript</div>
-        <div className={styles.technologies}>Node.js</div>
-        <div className={styles.technologies}>MongoDB</div>
-        <div className={styles.technologies}>DynamoDB</div>
+      <TechTags tags={["React.js", "Three.js", "Python", "TypeScript", "Node.js", "CSS", "MongoDB", "DynamoDB"]} />
       </div>
     </div>
   

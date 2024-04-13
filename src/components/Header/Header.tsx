@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 import styles from "./header.module.css"; 
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <div className={styles.header}>
             <Link

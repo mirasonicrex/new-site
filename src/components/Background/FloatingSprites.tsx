@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import styles from './floatingSprites.module.css';
 
-const FloatingSprites: React.FC = () => {
+const FloatingSprites = () => {
 
   const mountRef = useRef<HTMLDivElement>(null);
   const current = mountRef.current;

@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './components/Dashboard';
-import SpecialProjectHighlight from './components/SpecialProjectHighlight';
-import FloatingSprites from './components/FloatingSprites';
-import Slideshow from './components/SlideShow';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import DropdownMenu from './components/DropdownMenu';
-import ThreeProject from './components/ThreeProject';
-import About from './components/About';
+import Dashboard from './components/Projects/Dashboard';
+import RectentProjects from './components/Projects/RecentProjects';
+import FloatingSprites from './components/Background/FloatingSprites';
+import Slideshow from './components/Projects/3DModeling/SlideShow';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import DropdownMenu from './components/Projects/DropdownMenu';
+import ThreeProject from './components/Projects/ThreeProject';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <ThreeProject /> 
       </div>
         <div >
-        <SpecialProjectHighlight />
+        <RectentProjects />
         </div>
         <div id="pastPortfolios"  style={{marginTop: '100px'}}></div>
         <div  style={{display:'flex', flexDirection: 'column', justifyContent:  'space-evenly'}}>

@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
-import spritePng from "./floatcat.png";
 
-const FloatingSprite: React.FC = () => {
+// No currently using this,  but keeping  it around  incase I decide to  revisit
+
+const FloatingSprite = () => {
   const mountRef = useRef<HTMLDivElement>(null);
 
 

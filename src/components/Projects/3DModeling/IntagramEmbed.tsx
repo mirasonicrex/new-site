@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 
-const InstagramEmbed = ({ postUrl }:  any) => {
+interface InstagramEmbedProps {
+  postUrl: string
+}
+const InstagramEmbed = ({ postUrl }:  InstagramEmbedProps) => {
   useEffect(() => {
     const loadInstagramEmbedScript = () => {
       const script = document.createElement('script');
@@ -22,7 +25,7 @@ const InstagramEmbed = ({ postUrl }:  any) => {
 
   return (
     <blockquote className="instagram-media" data-instgrm-permalink={postUrl}>
-      <p >Loading...</p>
+      <p style={{minHeight: '550px'}}>Loading...</p>
     </blockquote>
   );
 };

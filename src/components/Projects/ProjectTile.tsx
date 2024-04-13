@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./projectTile.module.css";
+import TechTags from "./TechTags";
 
 interface ProjectTileProps {
   title: string;
@@ -10,14 +11,14 @@ interface ProjectTileProps {
   date: string;
 }
 
-export const ProjectTile: React.FC<ProjectTileProps> = ({
+export const ProjectTile = ({
   title,
   description,
   technologies,
   imageUrl,
   githubUrl,
   date,
-}) => {
+}: ProjectTileProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -36,12 +37,7 @@ export const ProjectTile: React.FC<ProjectTileProps> = ({
           <h2>{title}</h2>
           <div>{date}</div>
           <p>{description}</p>
-          <div className={styles.technologies}>
-            {technologies.map((tech, index) => (
-              <div key={index}>{tech}</div>
-            ))}
-          </div>
-
+          <TechTags tags={technologies} />
           <a
             href={githubUrl}
             target="_blank"

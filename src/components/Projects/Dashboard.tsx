@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProjectTile from './ProjectTile';
-import { projectsData } from '../data/projectData';
+import { oldProjectsData } from '../../data/oldProjectsData';
 import styles from './Dashboard.module.css';
 
-const Dashboard: React.FC = () => {
+const Dashboard = () => {
   const [selectedTech, setSelectedTech] = useState<string>('All');
   const [sortOrder, setSortOrder] = useState<string>('Newest');
 
   // Extract unique technologies
-  const uniqueTechnologies = Array.from(new Set(projectsData.flatMap(project => project.technologies)));
+  const uniqueTechnologies = Array.from(new Set(oldProjectsData.flatMap(project => project.technologies)));
   uniqueTechnologies.unshift('All');
 
   // Filter projects based on the selected technology
   let filteredProjects = selectedTech === 'All' 
-    ? projectsData 
-    : projectsData.filter(project => project.technologies.includes(selectedTech));
+    ? oldProjectsData 
+    : oldProjectsData.filter(project => project.technologies.includes(selectedTech));
 
   // Sort filtered projects by date
   filteredProjects = filteredProjects.sort((a, b) => {
@@ -25,7 +25,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className={styles.container}>
-    <h1>Older Git Hub Projects</h1>
+    <h1>Older Projects</h1>
 
     <div>
       <div className={styles.controls}>

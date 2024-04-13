@@ -62,16 +62,6 @@ ul, ol {
   text-align: right;
 }
 
-.technologies {
-  display: inline-block; 
-  background-color: #f0f0f0;
-  color: #333; 
-  padding: 2px 12px; 
-  margin: 0 5px 5px 0; 
-  border-radius: 5px; 
-  font-size: 0.85em; 
-}
-
 .imgGif {
   align-self: flex-end;       
   height: 450px;
@@ -102,12 +92,6 @@ ul, ol {
     height: 150px;
     width: 100%;
     margin-right: 1em;
-  }
-
-  .technologies {
-    padding: 2px 8px; 
-    font-size: 0.8em;
-    margin: 0 4px 4px 0; 
   }
 
   .content {

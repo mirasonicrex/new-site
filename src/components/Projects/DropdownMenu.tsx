@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const DropdownMenu = ({ portfolioLink, year }: any) => {
+interface DropdownMenuProps {
+  portfolioLink: string,
+  year: string
+}
+
+const DropdownMenu = ({ portfolioLink, year }: DropdownMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => setIsOpen(!isOpen);

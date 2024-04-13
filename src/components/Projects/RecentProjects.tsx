@@ -1,5 +1,6 @@
-import styles from "./SpecialProjectHighlight.module.css";
-const SpecialProjectHighlight: React.FC = () => {
+import styles from "./recentProjects.module.css";
+import TechTags from "./TechTags";
+const RecentProjects = () => {
   return (
     <div className={styles.specialProjectContainer}>
       <section className={`${styles.projectSection} ${styles.alignLeft}`}>
@@ -17,8 +18,7 @@ const SpecialProjectHighlight: React.FC = () => {
           is an indie game that I have been developing solo since October 2022.
           You return to an old project that you've abandoned, only to find that
           the game has not stopped evolving since you left it.{" "}
-          <div className={styles.technologies}>C#</div>{" "}
-          <div className={styles.technologies}>Unity</div>
+          <TechTags tags={["C#", "Unity"]} />
         </p>
         <a
           style={{
@@ -68,7 +68,7 @@ const SpecialProjectHighlight: React.FC = () => {
                   rel="noopener noreferrer"
                 >
                   Making NPCs Come Alive, Adding GOAP To My Game{" "}
-                  <div className={styles.technologies}>Blog Post</div>
+                  <TechTags tags={["Blog Post"]}/>
                 </a>
               </li>
               <li style={{ margin: "1em" }}>
@@ -77,7 +77,7 @@ const SpecialProjectHighlight: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GOAP Sample Repo <div className={styles.technologies}>C#</div>
+                  GOAP Sample Repo <TechTags tags={["C#"]}/>
                 </a>
               </li>
             </ul>
@@ -102,7 +102,7 @@ const SpecialProjectHighlight: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 Pathfinding Lessons learned{" "}
-                <div className={styles.technologies}>Blog Post</div>
+                <TechTags tags={["Blog Post"]}/>
               </a>
             </li>
             <li style={{ margin: "1em" }}>
@@ -112,7 +112,7 @@ const SpecialProjectHighlight: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 A* Pathfinding Repo{" "}
-                <div className={styles.technologies}>C#</div>
+                <TechTags tags={["C#"]}/>
               </a>
             </li>
           </ul>
@@ -130,4 +130,4 @@ const SpecialProjectHighlight: React.FC = () => {
   );
 };
 
-export default SpecialProjectHighlight;
+export default RecentProjects;

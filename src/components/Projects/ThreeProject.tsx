@@ -1,5 +1,6 @@
+import TechTags from "./TechTags";
 import styles from "./three.module.css";
-const ThreeProject: React.FC = () => {
+const ThreeProject = () => {
   return (
     <div className={styles.container}>
       <h2>Recent Projects</h2>
@@ -10,13 +11,7 @@ const ThreeProject: React.FC = () => {
         height="auto"
         src="imgs/aprilScreenshot.png"
       ></img>
-      <div>
-        <div className={styles.technologies}>Three.js</div>
-        <div className={styles.technologies}>React</div>
-        <div className={styles.technologies}>Typescript</div>
-        <div className={styles.technologies}> CSS</div>
-      </div>
-
+        <TechTags tags={["Three.js", "React", "TypeScript", "CSS"]} />
       <p>
         An experimental site created with Three.js and React that guides the
         user through the progress of my indie game ./ThisIsTheGame

@@ -40,15 +40,6 @@ h3 {
   text-decoration: none;
 }
 
-.technologies {
-  display: inline-block; 
-  background-color: #f0f0f0;
-  color: #333; 
-  padding: 2px 12px; 
-  margin: 0 5px 5px 0; 
-  border-radius: 5px; 
-  font-size: 0.85em; 
-}
 
 @media (max-width: 768px) {
   .container {
@@ -62,20 +53,10 @@ h3 {
     height: auto; 
     max-width: 650px;
   }
-
-  h2, h3 {
-    text-align: center; 
-    font-size: 1.5em; 
-  }
-
+  
   .link {
     padding: 8px 10px; 
     font-size: 0.8em;
   }
 
-  .technologies {
-    padding: 2px 8px; 
-    font-size: 0.8em; 
-    margin: 0 4px 4px 0; 
-  }
 }
